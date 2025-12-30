@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 0.9;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.625;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 7.5rem;
+    }
+
+    h2 {
+      font-size: 3.75rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    h4 {
+      font-size: 1.875rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@layer components {
+  .brutal-border {
+    border-width: 4px;
+    border-color: #000000;
+  }
+
+  .brutal-border-thick {
+    border-width: 6px;
+    border-color: #000000;
+  }
+
+  .brutal-card {
+    background-color: white;
+    border-width: 4px;
+    border-color: #000000;
+    box-shadow: 8px 8px 0px 0px #000000;
+  }
+
+  .brutal-card-lg {
+    background-color: white;
+    border-width: 6px;
+    border-color: #000000;
+    box-shadow: 12px 12px 0px 0px #000000;
+  }
+
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  .container-max {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #FF006E;
+    color: white;
+    border: 4px solid #000000;
+    font-weight: 700;
+    font-size: 1.125rem;
+    box-shadow: 8px 8px 0px 0px #000000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    box-shadow: none;
+    transform: translate(4px, 4px);
+  }
+
+  .btn-primary:active {
+    box-shadow: none;
+    transform: translate(8px, 8px);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: #000000;
+    border: 4px solid #000000;
+    font-weight: 700;
+    font-size: 1.125rem;
+    box-shadow: 8px 8px 0px 0px #000000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-secondary:hover {
+    box-shadow: none;
+    transform: translate(4px, 4px);
+  }
+
+  .btn-secondary:active {
+    box-shadow: none;
+    transform: translate(8px, 8px);
+  }
+
+  .btn-black {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: white;
+    border: 4px solid #000000;
+    font-weight: 700;
+    font-size: 1.125rem;
+    box-shadow: 8px 8px 0px 0px #000000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-black:hover {
+    box-shadow: none;
+    transform: translate(4px, 4px);
+  }
+
+  .btn-black:active {
+    box-shadow: none;
+    transform: translate(8px, 8px);
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 2px #000000;
+    paint-order: stroke fill;
+  }
+
+  .grid-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .grid-features {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .grid-testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .grid-testimonials {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@layer utilities {
+  .translate-brutal {
+    transition: transform 0.2s ease;
+  }
+
+  .translate-brutal:hover {
+    transform: translate(4px, 4px);
+  }
+
+  .translate-brutal:active {
+    transform: translate(8px, 8px);
+  }
+
+  .shadow-brutal-increase:hover {
+    box-shadow: 12px 12px 0px 0px #000000;
+  }
+}
