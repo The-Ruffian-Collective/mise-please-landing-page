@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- Left accent block -->
+  <rect x="0" y="0" width="80" height="630" fill="#FF006E"/>
+
+  <!-- Decorative shapes -->
+  <rect x="950" y="80" width="120" height="120" fill="#FFBE0B" stroke="#000" stroke-width="6" transform="rotate(12 1010 140)"/>
+  <circle cx="180" cy="520" r="60" fill="#00F5FF" stroke="#000" stroke-width="6"/>
+  <rect x="1000" y="450" width="80" height="80" fill="#FF006E" stroke="#000" stroke-width="6" transform="rotate(45 1040 490)"/>
+
+  <!-- Logo -->
+  <rect x="120" y="80" width="80" height="80" fill="#FF006E" stroke="#000" stroke-width="6"/>
+  <text x="160" y="135" font-family="system-ui, sans-serif" font-size="36" font-weight="900" fill="white" text-anchor="middle">MP</text>
+
+  <!-- Main heading -->
+  <text x="120" y="280" font-family="system-ui, sans-serif" font-size="72" font-weight="900" fill="#000">MISE PLEASE</text>
+
+  <!-- Subheading -->
+  <text x="120" y="360" font-family="system-ui, sans-serif" font-size="36" font-weight="700" fill="#374151">Professional Kitchen Prep Management</text>
+
+  <!-- Tagline -->
+  <text x="120" y="440" font-family="system-ui, sans-serif" font-size="28" fill="#6B7280">Fast, smart, printable mise en place</text>
+  <text x="120" y="480" font-family="system-ui, sans-serif" font-size="28" fill="#6B7280">for professional kitchens.</text>
+
+  <!-- Bottom accent -->
+  <rect x="120" y="540" width="200" height="8" fill="#00F5FF"/>
+  <rect x="340" y="540" width="100" height="8" fill="#FFBE0B"/>
+  <rect x="460" y="540" width="60" height="8" fill="#FF006E"/>
+</svg>

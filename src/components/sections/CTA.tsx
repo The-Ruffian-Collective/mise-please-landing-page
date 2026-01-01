@@ -8,16 +8,22 @@ export function CTA() {
     <section className="relative section-padding overflow-hidden">
       {/* Diagonal Split Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 w-1/2" style={{ backgroundColor: '#FFBE0B' }} />
-        <div className="absolute inset-0 w-1/2 ml-auto" style={{ backgroundColor: '#FF006E' }} />
-        {/* Diagonal divider line */}
+        {/* Yellow base */}
+        <div className="absolute inset-0" style={{ backgroundColor: '#FFBE0B' }} />
+        {/* Pink diagonal overlay */}
         <div
           className="absolute inset-0"
           style={{
-            backgroundColor: '#000000',
-            clipPath: 'polygon(0 0, 100% 0, 0 100%)',
-            width: '8px',
-            right: '49.5%',
+            backgroundColor: '#FF006E',
+            clipPath: 'polygon(40% 0, 100% 0, 100% 100%, 60% 100%)',
+          }}
+        />
+        {/* Black diagonal divider line */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to bottom right, transparent calc(50% - 3px), #000000 calc(50% - 3px), #000000 calc(50% + 3px), transparent calc(50% + 3px))',
+            clipPath: 'polygon(40% 0, 42% 0, 62% 100%, 60% 100%)',
           }}
         />
       </div>
