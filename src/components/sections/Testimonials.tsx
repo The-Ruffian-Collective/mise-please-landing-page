@@ -24,10 +24,7 @@ export function Testimonials() {
                 boxShadow: `10px 10px 0px 0px ${shadowColors[index]}`,
               }}
             >
-              <div
-                className="text-6xl font-display leading-none mb-4"
-                style={{ color: '#FF006E' }}
-              >
+              <div className="text-6xl font-display leading-none mb-4 text-black">
                 "
               </div>
 

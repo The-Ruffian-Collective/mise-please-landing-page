@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter, Space_Grotesk, Space_Mono } from 'next/font/google'
 import './globals.css'
 
@@ -50,11 +50,16 @@ export const metadata: Metadata = {
     description: 'Fast, smart, printable mise en place for professional kitchens.',
     images: ['/og-image.svg'],
   },
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
-  themeColor: '#FF006E',
   icons: {
     icon: '/favicon.svg',
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#FF006E',
 }
 
 export default function RootLayout({
