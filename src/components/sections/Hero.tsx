@@ -101,9 +101,9 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Accent elements */}
+            {/* Accent elements - hidden on mobile to prevent overflow */}
             <div
-              className="absolute -bottom-4 -right-4 w-24 h-24 border-6"
+              className="hidden md:block absolute -bottom-4 -right-4 w-24 h-24 border-6"
               style={{
                 backgroundColor: '#FFBE0B',
                 borderColor: '#000000',
@@ -111,7 +111,7 @@ export function Hero() {
               }}
             />
             <div
-              className="absolute -top-4 -left-4 w-16 h-16 border-6"
+              className="hidden md:block absolute -top-4 -left-4 w-16 h-16 border-6"
               style={{
                 backgroundColor: '#FB5607',
                 borderColor: '#000000',

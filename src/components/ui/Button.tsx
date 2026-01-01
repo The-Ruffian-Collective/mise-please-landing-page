@@ -6,6 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'sm' | 'md' | 'lg'
   href?: string
   isExternal?: boolean
+  onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -43,6 +44,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       return (
         <a
           href={href}
+          onClick={props.onClick as React.MouseEventHandler<HTMLAnchorElement>}
           target={isExternal ? '_blank' : undefined}
           rel={isExternal ? 'noopener noreferrer' : undefined}
           className={`inline-block ${combinedClassName}`}

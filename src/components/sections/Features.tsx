@@ -1,4 +1,4 @@
-import { Card, Container } from '@/components/ui'
+import { Container } from '@/components/ui'
 import { FEATURES } from '@/lib/constants'
 
 export function Features() {

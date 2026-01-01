@@ -74,18 +74,10 @@ export const FOOTER_LINKS = {
   product: [
     { label: 'Features', href: '#features' },
     { label: 'How It Works', href: '#how-it-works' },
-    { label: 'About', href: '#' },
   ],
-  legal: [
-    { label: 'Privacy', href: '#' },
-    { label: 'Terms', href: '#' },
-    { label: 'Contact', href: `mailto:${SITE_CONFIG.email}` },
-  ],
-  social: [
-    { label: 'Twitter', href: '#', icon: 'twitter' },
-    { label: 'Instagram', href: '#', icon: 'instagram' },
-    { label: 'GitHub', href: '#', icon: 'github' },
-  ],
+  contact: {
+    email: SITE_CONFIG.email,
+  },
 }
 
 export const PRICING_FEATURES = [
