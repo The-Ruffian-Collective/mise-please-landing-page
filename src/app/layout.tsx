@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: 'Mise Please',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Mise Please - Kitchen Prep Management',
@@ -48,12 +48,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Mise Please - Professional Kitchen Prep Management',
     description: 'Fast, smart, printable mise en place for professional kitchens.',
-    images: ['/og-image.png'],
+    images: ['/og-image.svg'],
   },
   viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
   themeColor: '#FF006E',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.svg',
   },
 }
 

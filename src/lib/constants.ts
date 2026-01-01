@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   appUrl: 'https://mise-please.vercel.app',
   description:
     'Stop juggling sticky notes and spreadsheets. Fast, smart, printable mise en place for professional kitchens.',
-  ogImage: '/og-image.png',
+  ogImage: '/og-image.svg',
   email: 'hello@miseplease.com',
 }
 
